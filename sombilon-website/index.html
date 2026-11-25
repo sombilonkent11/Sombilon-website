@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Threads – stylish, comfortable and affordable streetwear. Oversized tees, hoodies, jackets and more.">
+  <title>Urban Threads | Streetwear Clothing Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Reusable garment icons for product images -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="tee" viewBox="0 0 100 100">
+      <path d="M33 14 L10 26 L19 42 L28 37 L28 88 L72 88 L72 37 L81 42 L90 26 L67 14 C63 22 37 22 33 14 Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="hoodie" viewBox="0 0 100 100">
+      <path d="M34 12 C38 22 62 22 66 12 L84 24 L94 62 L80 66 L76 46 L76 90 L24 90 L24 46 L20 66 L6 62 L16 24 Z" fill="currentColor"/>
+      <path d="M40 22 C44 34 56 34 60 22" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="3"/>
+    </symbol>
+    <symbol id="jacket" viewBox="0 0 100 100">
+      <path d="M34 12 L50 22 L66 12 L88 24 L96 66 L82 70 L78 48 L78 90 L52 90 L52 30 L48 30 L48 90 L22 90 L22 48 L18 70 L4 66 L12 24 Z" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">URBAN<span>THREADS</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#new-arrivals">New Arrivals</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#cart" class="cart-link">Cart <span class="cart-count">2</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME / HERO ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">New Collection 2026</p>
+          <h1>Wear Your <em>Own</em> Style.</h1>
+          <p class="hero-sub">Stylish, comfortable and affordable streetwear for everyone who loves modern fashion. Oversized tees, hoodies, jackets and more.</p>
+          <div class="hero-actions">
+            <a href="#shop" class="btn btn-primary">Shop Now</a>
+            <a href="#new-arrivals" class="btn btn-outline">New Arrivals</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>100%</strong> Comfort fit</li>
+            <li><strong>Free</strong> Size guide</li>
+            <li><strong>Easy</strong> Ordering</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-circle"></div>
+          <svg class="hero-garment g1"><use href="#hoodie"/></svg>
+          <svg class="hero-garment g2"><use href="#tee"/></svg>
+          <svg class="hero-garment g3"><use href="#jacket"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee strip -->
+    <div class="strip" aria-hidden="true">
+      <span>OVERSIZED TEES</span><span>★</span><span>HOODIES</span><span>★</span><span>JACKETS</span><span>★</span><span>STREET READY</span><span>★</span><span>OVERSIZED TEES</span><span>★</span><span>HOODIES</span>
+    </div>
+
+    <!-- ============ SHOP / PRODUCT CATALOG ============ -->
+    <section id="shop" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Shop</p>
+          <h2>Featured Products</h2>
+          <p>Browse our streetwear essentials. Each item shows its price, sizes and color options.</p>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+            <div class="product-img bg-gray"><svg class="garment" style="color:#111"><use href="#tee"/></svg><span class="badge">Best Seller</span></div>
+            <div class="product-info">
+              <h3>Classic Oversized Tee</h3>
+              <p class="desc">Heavyweight cotton with a relaxed, boxy fit for all-day comfort.</p>
+              <div class="swatches" aria-label="Colors: black, white, gray"><i style="background:#111"></i><i style="background:#fff"></i><i style="background:#8a8a8a"></i></div>
+              <p class="sizes">Sizes: S · M · L · XL</p>
+              <div class="product-bottom"><span class="price">₱599</span><a href="#cart" class="btn btn-small">Add to Cart</a></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img bg-orange"><svg class="garment" style="color:#111"><use href="#hoodie"/></svg></div>
+            <div class="product-info">
+              <h3>Street Pullover Hoodie</h3>
+              <p class="desc">Soft fleece lining and a roomy hood. Made for cool evenings out.</p>
+              <div class="swatches" aria-label="Colors: black, gray, orange"><i style="background:#111"></i><i style="background:#8a8a8a"></i><i style="background:#ff6a1a"></i></div>
+              <p class="sizes">Sizes: S · M · L · XL</p>
+              <div class="product-bottom"><span class="price">₱1,199</span><a href="#cart" class="btn btn-small">Add to Cart</a></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img bg-dark"><svg class="garment" style="color:#f2f2f2"><use href="#jacket"/></svg></div>
+            <div class="product-info">
+              <h3>Utility Coach Jacket</h3>
+              <p class="desc">Lightweight, wind-resistant jacket with snap buttons and two pockets.</p>
+              <div class="swatches" aria-label="Colors: black, gray"><i style="background:#111"></i><i style="background:#8a8a8a"></i></div>
+              <p class="sizes">Sizes: M · L · XL</p>
+              <div class="product-bottom"><span class="price">₱1,499</span><a href="#cart" class="btn btn-small">Add to Cart</a></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img bg-light"><svg class="garment" style="color:#8a8a8a"><use href="#tee"/></svg></div>
+            <div class="product-info">
+              <h3>Washed Graphic Tee</h3>
+              <p class="desc">Vintage-wash finish with a bold chest print. Soft from the first wear.</p>
+              <div class="swatches" aria-label="Colors: gray, white"><i style="background:#8a8a8a"></i><i style="background:#fff"></i></div>
+              <p class="sizes">Sizes: S · M · L · XL</p>
+              <div class="product-bottom"><span class="price">₱649</span><a href="#cart" class="btn btn-small">Add to Cart</a></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEW ARRIVALS ============ -->
+    <section id="new-arrivals" class="section section-dark">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Just Dropped</p>
+          <h2>New Arrivals</h2>
+          <p>Fresh pieces from our latest collection. Limited stock, so grab yours early.</p>
+        </div>
+
+        <div class="arrivals">
+          <article class="arrival-card">
+            <div class="arrival-img"><svg class="garment" style="color:#ff6a1a"><use href="#hoodie"/></svg></div>
+            <div>
+              <span class="badge badge-inline">New</span>
+              <h3>Midnight Zip Hoodie</h3>
+              <p>A full-zip hoodie with a soft brushed interior and clean minimalist lines.</p>
+              <p class="price price-light">₱1,299</p>
+              <a href="#cart" class="btn btn-primary btn-small">Add to Cart</a>
+            </div>
+          </article>
+
+          <article class="arrival-card">
+            <div class="arrival-img"><svg class="garment" style="color:#f2f2f2"><use href="#jacket"/></svg></div>
+            <div>
+              <span class="badge badge-inline">New</span>
+              <h3>Cargo Bomber Jacket</h3>
+              <p>Boxy bomber silhouette with cargo pockets. Built for layering in any season.</p>
+              <p class="price price-light">₱1,699</p>
+              <a href="#cart" class="btn btn-primary btn-small">Add to Cart</a>
+            </div>
+          </article>
+
+          <article class="arrival-card">
+            <div class="arrival-img"><svg class="garment" style="color:#8a8a8a"><use href="#tee"/></svg></div>
+            <div>
+              <span class="badge badge-inline">New</span>
+              <h3>Drop-Shoulder Tee</h3>
+              <p>Extra-long hem and dropped shoulders for that signature oversized look.</p>
+              <p class="price price-light">₱629</p>
+              <a href="#cart" class="btn btn-primary btn-small">Add to Cart</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CART ============ -->
+    <section id="cart" class="section">
+      <div class="container cart-layout">
+        <div>
+          <div class="section-head left">
+            <p class="eyebrow">Cart</p>
+            <h2>Your Selected Items</h2>
+            <p>Review your items and check the estimated total before ordering.</p>
+          </div>
+
+          <div class="cart-table-wrap">
+            <table class="cart-table">
+              <thead>
+                <tr><th>Item</th><th>Size</th><th>Qty</th><th class="num">Price</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Classic Oversized Tee <small>Black</small></td><td>L</td><td>1</td><td class="num">₱599</td></tr>
+                <tr><td>Street Pullover Hoodie <small>Orange</small></td><td>M</td><td>1</td><td class="num">₱1,199</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><td colspan="3">Estimated Total</td><td class="num total">₱1,798</td></tr>
+              </tfoot>
+            </table>
+          </div>
+          <p class="note">Shipping fee is calculated after your delivery address is confirmed.</p>
+        </div>
+
+        <!-- ORDER / CHECKOUT -->
+        <aside class="order-box" id="order">
+          <h3>Order &amp; Delivery Details</h3>
+          <form action="mailto:orders@urbanthreads.example" method="post" enctype="text/plain">
+            <label>Full Name
+              <input type="text" name="name" placeholder="Juan Dela Cruz" required>
+            </label>
+            <label>Mobile Number
+              <input type="tel" name="phone" placeholder="09XX XXX XXXX" required>
+            </label>
+            <label>Delivery Address
+              <textarea name="address" rows="3" placeholder="House no., street, barangay, city" required></textarea>
+            </label>
+            <label>Payment Option
+              <select name="payment">
+                <option>Cash on Delivery</option>
+                <option>E-Wallet</option>
+                <option>Bank Transfer</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary btn-block">Submit Order</button>
+            <p class="note">Payment options depend on the business setup.</p>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO ORDER ============ -->
+    <section class="section section-gray">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Easy Ordering</p>
+          <h2>How to Order</h2>
+        </div>
+        <ol class="steps">
+          <li><span>1</span><h3>Browse</h3><p>Explore the Shop and New Arrivals pages.</p></li>
+          <li><span>2</span><h3>Choose</h3><p>Pick your size and color, then add to cart.</p></li>
+          <li><span>3</span><h3>Review</h3><p>Check your items and estimated total.</p></li>
+          <li><span>4</span><h3>Order</h3><p>Enter your delivery details and submit.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about-visual" aria-hidden="true">
+          <svg class="garment" style="color:#111"><use href="#hoodie"/></svg>
+          <span class="about-tag">Est. 2026</span>
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">About Us</p>
+          <h2>Fashion That Speaks for You</h2>
+          <p>Urban Threads is a streetwear brand built for people who love to express their personal style. We design oversized T-shirts, hoodies, jackets and casual outfits with trendy looks, comfortable materials and fair prices.</p>
+          <p>Our online store makes it easy for customers beyond our local area to discover our collections anytime, from any device.</p>
+          <ul class="checks">
+            <li>Trendy, modern designs</li>
+            <li>Comfortable, quality fabrics</li>
+            <li>Affordable prices</li>
+            <li>Simple, convenient online shopping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-dark">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Contact Us</p>
+          <h2>Got Questions? Let's Talk.</h2>
+          <p>Message us about products, sizes or your order.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:hello@urbanthreads.example">hello@urbanthreads.example</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Instagram</h3>
+            <p><a href="#contact">@urbanthreads</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Facebook</h3>
+            <p><a href="#contact">/urbanthreads</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Store Hours</h3>
+            <p>Online · 24/7<br>Replies: Mon–Sat, 9AM–6PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">URBAN<span>THREADS</span></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#new-arrivals">New Arrivals</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <p>&copy; 2026 Urban Threads. A fictional brand created for FT-LAB Activity 2.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+ 
